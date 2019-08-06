@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图片展示--侧边显示详细信息</title>
+<style>
+div, ul, li, dl, dt, dd, img, a {
+	margin: 0;
+	padding: 0;
+	}
+ul, li, dl, dt, dd {
+	list-style: none;
+	}
+img {
+	border: 0;
+	width: 300px;
+	}
+.demo {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 34px;
+	}
+.orginImg li {
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	margin-bottom:10px;
+	}
+.orginImg li a {
+	display: block;
+	border: 2px solid #ccc;
+	}
+.orginImg li div {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 22;
+	background: #ccc;
+	width: 305px;
+	height: 170px;
+	border: 2px solid #F00;
+	display: none;
+	}
+.orginImg li div dl{
+	color:#fff;
+	font-weight:bold;
+	padding:10px;
+	}
+.orginImg li div dl dt{
+	text-align:center;
+	}
+.orginImg li div dl dd{
+	text-indent:2em;
+	}
+	</style>
+	</head>
+	
+<body>
+  <div class="demo">
+  <ul class="orginImg" id="orginImg" >
+    <li> 
+      <a href="http://imooc.com"><img src="http://img.mukewang.com/52fd84630001d22603000170.jpg" /></a>  
+      <div> 
+        <dl>
+          <dt>学会html5 绝对的屌丝逆袭</dt>
+          <dd>本课程由浅入深，逐步推进，以示例为主线，详细完整地介绍HTML5的新功能与新特征</dd>
+        </dl>
+      </div> 
+    </li>
+    <li> 
+      <a href="http://imooc.com"><img src="http://img.mukewang.com/52fd848d00017baa03000170.jpg" /></a>  
+      <div>
+        <dl>
+          <dt>圆角水晶按钮制作</dt>
+          <dd>网页中的圆角按钮和宽度自适应按钮就这么轻松制作</dd>
+        </dl>
+      </div> 
+    </li>
+    <li> 
+      <a href="http://imooc.com"><img src="http://img.mukewang.com/52fd84b00001e9b803000169.jpg" /></a>  
+      <div> 
+        <dl>
+          <dt>导航条菜单的制作</dt>
+          <dd>30分钟教你轻松制作出各种形式的网站导航条菜单</dd>
+        </dl>
+      </div> 
+    </li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+	var lis = document.getElementById("orginImg").getElementsByTagName("li");
+	for(var i =0;i<lis.length;i++){
+	lis[i].onmouseover = showDetail;
+	lis[i].onmouseout = hideDetail;
+	}
+	var lastLi;
+	lastLi = lis[ lis.length-1 ];
+	lastLi.getElementsByTagName("div")[0].style.left=' auto ';
+	lastLi.getElementsByTagName("div")[0].style.right='100%'  ; 
+	function showDetail(){
+	  this.getElementsByTagName("div")[0].style.display = 'block';
+	}
+	function hideDetail(){
+	  this.getElementsByTagName("div")[0].style.display = 'none';
+	}
+  </script>
+</body>
+</html>

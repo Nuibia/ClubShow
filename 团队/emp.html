@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dom1</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.js"></script>
+		<script type="application/javascript" src="js/npm.js"></script>
+		
+		
+		<style type="text/css">
+			@font-face {
+					font-family: '站酷快乐体';
+					src:url('fonts/站酷快乐体.ttf');
+				
+			}
+			body {
+			    overflow-x: hidden;
+			    color: #2c3e50;
+			    font-family:'站酷快乐体';
+			    font-size: 20px;
+			    /*font-size: 40px;*/
+			}
+			#nav{
+				height: 70px;
+				font-family: "站酷快乐体";
+			}
+			
+			.container{
+				margin-top:10px;
+				
+			}
+			header{
+				text-align: center;
+				background: #6f5499;
+				color: white;
+				}
+			header .container {
+			    padding-top: 100px;
+			    padding-bottom: 50px;
+				}
+			header img{
+					margin: 0 auto 20px;
+				}
+			#hearder_img{
+				width:256px;
+				height: 256px;
+			}
+			hr.star-light {
+			    padding: 0;
+			    border: none;
+			    border-top: solid 5px;
+			    text-align: center;
+			    max-width: 250px;
+			    margin: 25px auto 30px;
+			}
+			#nav_img{
+				width:270px;
+				height: 60px;
+				margin-top: -15px;
+			}
+			/*.name{
+				font-size: 30px;
+			}*/
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			    font-size: 2em;
+			}
+			@media (min-width: 768px)
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			   
+			}
+			img{
+				transition:all 0.3s;
+			}
+			 a img:hover{
+				transform: scale(1,1.2);
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+			<div class="container">
+		        <div class="navbar-header page-scroll">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+		            <a class="navbar-brand" href="#page-top">
+		            	<img src="img/ep-logo.png" class="img-responsive" id="nav_img"/>
+		            </a>
+		        </div>
+		        <div id="navbar" class="collapse navbar-collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			        	<li class="hidden active"><a href="#page-top"></a></li>
+			            <li class="page-scroll"><a href="index.html">团队简介</a></li>
+			            <li class="page-scroll"><a href="#teamer">成员介绍</a></li>
+			            <li class="page-scroll"><a href="#team_teacher">团队老师</a></li>
+			            
+			            <li class="page-scroll"><a href="#tel">团队招募</a></li>
+			            <li class="page-scroll"><a href="#tel">联系我们</a></li>
+			            
+			        </ul>
+		        </div>
+	      	</div>
+    	</nav>
+    	<header>
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family:'站酷快乐体';font-size: 40px;">BAR TEAM</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills" style="font-family:'站酷快乐体';font-size: 20px;">
+	    						宁为代码累弯腰，不为bug点提交
+	    						<br>
+	    						今天的努力，明天的成功。
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+		<section id="teamer" style="padding-top: 90px;padding-bottom: 40px;">
+			<div class="container" style="box-shadow: #EBCCD1 0px 0px 10px; ">
+				<div class="row">
+    				<div class="col-lg-12 text-center">
+    					<h2>招募信息</h2>
+    					<hr class="star-primary">
+    				</div>
+    			</div>
+    			<div class="row text-center">
+    					
+    				<form action="#" method="post">
+						<fieldset>
+							
+							<div class="form-group">
+								<label class="text-right">姓名&nbsp;：&nbsp;</label>
+								<input type="text" class="col-lg-push-3" placeholder="输入姓名"/>
+							</div>
+							<div class="form-group">
+								<lable class="text-right">年龄&nbsp;:&nbsp;</lable>
+								<input type="text" class="col-lg-push-3 name="pwd" placeholder="输入年龄"/>
+								
+							</div>
+							<div class="form-group">
+								<lable class="text-right">性别&nbsp;:&nbsp;</lable>
+								<input type="text" class="col-lg-push-3 name="pwd" placeholder="输入性别"/>
+								
+							</div>
+							<div class="form-group">
+								<lable class="text-right">学院&nbsp;:&nbsp;</lable>
+								<input type="text" class="col-lg-push-3 name="pwd" placeholder="输入学院"/>
+								
+							</div>
+							<div class="form-group">
+								<lable class="text-right">年级&nbsp;:&nbsp;</lable>
+								<input type="text" class="col-lg-push-3 name="pwd" placeholder="输入年级"/>
+								
+							</div>
+							<div class="form-group">
+								<lable class="text-right">问卷&nbsp;:&nbsp;</lable>
+								<textarea class="col-lg-push-3 rows="2" placeholder="输入对团队的看法和参加我们团队的原因"></textarea>
+								
+							</div>
+							
+							<a class="btn btn-danger" href="index.html">保存</a>
+							<a href="index.html" class="btn btn-info">提交</a>
+						</fieldset>
+					</form>
+			    				
+    			</div>
+    	    </div>
+    	</section>
+    	<header style="background-color: #222222;padding-top: 80px;">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<!--<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>-->
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family: '站酷快乐体';">BAR团队欢迎您</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills">
+	    						welcome to join us
+	    						<br>
+	    						Copyright © Echo Central 2017
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+    	
+	</body>
+</html>

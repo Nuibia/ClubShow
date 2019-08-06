@@ -1,0 +1,233 @@
+	@font-face {
+					font-family: '站酷快乐体';
+					src:url('fonts/站酷快乐体.ttf');
+				
+			}
+			body {
+			    /*overflow-x: hidden;*/
+			    color: #2c3e50;
+			    font-family:'站酷快乐体';
+			    font-size: 20px;
+			    /*font-size: 40px;*/
+			}
+			#nav{
+				height: 70px;
+				font-family: "站酷快乐体";
+			}
+			
+			.container{
+				margin-top:10px;
+				
+			}
+			header{
+				text-align: center;
+				background: #6f5499;
+				color: white;
+				}
+			header .container {
+			    padding-top: 100px;
+			    padding-bottom: 50px;
+				}
+			header img{
+					margin: 0 auto 20px;
+				}
+			#hearder_img{
+				width:256px;
+				height: 256px;
+			}
+			hr.star-light {
+			    padding: 0;
+			    border: none;
+			    border-top: solid 5px;
+			    text-align: center;
+			    max-width: 250px;
+			    margin: 25px auto 30px;
+			}
+			#nav_img{
+				width:270px;
+				height: 60px;
+				margin-top: -15px;
+			}
+			/*.name{
+				font-size: 30px;
+			}*/
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			    font-size: 2em;
+			}
+			@media (min-width: 768px)
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			   
+			}
+			img{
+				transition:all 0.3s;
+			}
+			 a img:hover{
+				transform: scale(1,1.2);
+			}
+			#team_show *{
+				z-index: 2;
+			}
+			@media (min-width: 768px)
+				.container {
+			    width: 750px;
+			    
+			}
+			hr.star-primary {
+			    border-color: #2c3e50;
+			    padding: 0;
+			    border: none;
+			    border-top: solid 5px;
+			    text-align: center;
+			    max-width: 250px;
+			    margin: 25px auto 30px;
+			}
+			.media-left{
+				width:300px;
+				
+			}
+			#bar_show{
+				width:250px;
+				height: 210px;
+				margin-top: 90px;
+				/*position: absolute;*/
+			}
+			.media-body{
+				padding-left: 10px;
+				width:800px;
+			
+				
+			}
+			.media-body li{
+				padding-left: 30px;
+			}
+			.media-body a{
+				font-size: 20px;
+				color: #000000;
+				
+			}
+			.tab-content{
+				font-size: 18px;
+				margin-top: 30px;
+			}
+			#teacher{
+				padding-left: 140px;
+				
+			}
+			#media-heading{
+				margin-top: 10px;
+			}
+			#teamershow{
+				width:200px;
+				height: 210px;
+			
+			}
+			#teamer_show{
+				/*width:400px;*/
+				/*padding-right: 20px;*/
+				padding-left: 50px;
+			}
+			
+			#teamer_li{
+				width:600px;
+			}
+			#teamer_ul{
+				height: 220px;
+				width:1000px;
+			}
+			.down_arrow{
+				width: 40px;
+			    height: 40px;
+			    -webkit-border-radius: 50%;
+			    background: rgba(61, 201, 179, 0.8);
+			    display: inline-block;
+			    margin:  10px auto 20px;
+			    color: #fff;
+			    font-size: 16px;
+			    line-height: 40px;
+			    text-align: center;
+
+			}
+			.box-hover {
+			    transition: all 500ms ease-in-out;
+			    -webkit-transition: all 500ms ease-in-out;
+			   
+			}
+			.light-box {
+			    background-color: #fff;
+			    -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4;
+			   
+			    box-shadow: 0px 3px 0px 0px #f0f2f4;
+			    padding: 20px 0;
+			}
+			.address{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.address_name{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.weixin{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.weixin_number{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.QQ{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.QQ_number{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.social-buttons{
+			    list-style: none;
+			    margin: 0;
+			    padding: 0;
+			}
+			.social-buttons li{
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.social-btn{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				background: #242830;
+			    display: inline-block;
+			    color: #fff;
+			    font-size: 17px;
+			    line-height: 40px;
+			    text-align: center;
+			}
+			
