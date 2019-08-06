@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dom1</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.js"></script>
+		
+		
+	
+		<script language="JavaScript">
+			$(function(){
+				$('.nav a').click(function (e) {
+				  e.preventDefault()
+				  $(this).tab('show')
+				});
+			});
+		
+		</script>
+		<style type="text/css">
+			@font-face {
+					font-family: '站酷快乐体';
+					src:url('fonts/站酷快乐体.ttf');
+				
+			}
+			body {
+			    overflow-x: hidden;
+			    color: #2c3e50;
+			    font-family:'站酷快乐体';
+			    font-size: 20px;
+			    /*font-size: 40px;*/
+			}
+			#nav{
+				height: 70px;
+				font-family: "站酷快乐体";
+			}
+			
+			.container{
+				margin-top:10px;
+				
+			}
+			header{
+				text-align: center;
+				background: #6f5499;
+				color: white;
+				}
+			header .container {
+			    padding-top: 100px;
+			    padding-bottom: 50px;
+				}
+			header img{
+					margin: 0 auto 20px;
+				}
+			#hearder_img{
+				width:256px;
+				height: 256px;
+			}
+			hr.star-light {
+			    padding: 0;
+			    border: none;
+			    border-top: solid 5px;
+			    text-align: center;
+			    max-width: 250px;
+			    margin: 25px auto 30px;
+			}
+			#nav_img{
+				width:270px;
+				height: 60px;
+				margin-top: -15px;
+			}
+			/*.name{
+				font-size: 30px;
+			}*/
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			    font-size: 2em;
+			}
+			@media (min-width: 768px)
+			header .intro-text .name {
+			    display: block;
+			    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			   
+			}
+			img{
+				transition:all 0.3s;
+			}
+			 a img:hover{
+				transform: scale(1,1.2);
+			}
+			#team_show *{
+				z-index: 2;
+			}
+			@media (min-width: 768px)
+				.container {
+			    width: 750px;
+			    
+			}
+			hr.star-primary {
+			    border-color: #2c3e50;
+			    padding: 0;
+			    border: none;
+			    border-top: solid 5px;
+			    text-align: center;
+			    max-width: 250px;
+			    margin: 25px auto 30px;
+			}
+			.media-left{
+				width:300px;
+				
+			}
+			#bar_show{
+				width:250px;
+				height: 210px;
+				margin-top: 90px;
+				/*position: absolute;*/
+			}
+			.media-body{
+				padding-left: 10px;
+				width:800px;
+			
+				
+			}
+			.media-body li{
+				padding-left: 30px;
+			}
+			.media-body a{
+				font-size: 20px;
+				color: #000000;
+				
+			}
+			.tab-content{
+				font-size: 18px;
+				margin-top: 30px;
+			}
+			#teacher{
+				padding-left: 140px;
+				
+			}
+			#media-heading{
+				margin-top: 10px;
+			}
+			#teamershow{
+				width:200px;
+				height: 210px;
+			
+			}
+			#teamer_show{
+				width:400px;
+				/*padding-right: 20px;*/
+				padding-left: 50px;
+			}
+			
+			#teamer_li{
+				width:600px;
+			}
+			#teamer_ul{
+				height: 220px;
+				width:1000px;
+			}
+			.down_arrow{
+				width: 40px;
+			    height: 40px;
+			    -webkit-border-radius: 50%;
+			    background: rgba(61, 201, 179, 0.8);
+			    display: inline-block;
+			    margin:  10px auto 20px;
+			    color: #fff;
+			    font-size: 16px;
+			    line-height: 40px;
+			    text-align: center;
+
+			}
+			.box-hover {
+			    transition: all 500ms ease-in-out;
+			    -webkit-transition: all 500ms ease-in-out;
+			   
+			}
+			.light-box {
+			    background-color: #fff;
+			    -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4;
+			   
+			    box-shadow: 0px 3px 0px 0px #f0f2f4;
+			    padding: 20px 0;
+			}
+			.address{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.address_name{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.weixin{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.weixin_number{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.QQ{
+				display: block;
+			    color: #3dc9b3;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 20px;
+			    margin-top: 15px;
+			}
+			.QQ_number{
+				color: #8c9398;
+			    word-spacing: 1px;
+			    line-height: 25px;
+			    font-size: 16px;
+			}
+			.social-buttons{
+			    list-style: none;
+			    margin: 0;
+			    padding: 0;
+			}
+			.social-buttons li{
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.social-btn{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				background: #242830;
+			    display: inline-block;
+			    color: #fff;
+			    font-size: 17px;
+			    line-height: 40px;
+			    text-align: center;
+			}
+		</style>
+	</head>
+	<body id="page-top" class="index" data-spy="scroll" >
+		<!--导航栏开始-->
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+			<div class="container">
+		        <div class="navbar-header page-scroll">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+		            <a class="navbar-brand" href="#page-top">
+		            	<img src="img/ep-logo.png" class="img-responsive" id="nav_img"/>
+		            </a>
+		        </div>
+		        <div id="navbar" class="collapse navbar-collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			        	<li class="hidden active"><a href="#page-top"></a></li>
+			            <li class="page-scroll"><a href="#team_show">团队简介</a></li>
+			            <li class="page-scroll"><a href="#teamer">成员介绍</a></li>
+			            <li class="page-scroll"><a href="#team_teacher">团队老师</a></li>
+			            
+			            <li><a href="emp.html">团队招募</a></li>
+			            <li class="page-scroll"><a href="#tel">联系我们</a></li>
+			            
+			        </ul>
+		        </div>
+	      	</div>
+    	</nav>
+    	<!--导航栏结束-->
+    			<!--导航栏-->
+		
+    	<!--hearder开始-->
+    	<header>
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family:'站酷快乐体';font-size: 40px;">BAR TEAM</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills" style="font-family:'站酷快乐体';font-size: 20px;">
+	    						宁为代码累弯腰，不为bug点提交
+	    						<br>
+	    						今天的努力，明天的成功。
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+    	<!--hearder结束-->
+    	<!--团队简介-->
+    	<section id="team_show" style="padding-top: 90px;padding-bottom: 40px;">
+    		<div class="container" style="box-shadow: #CCCCCC 0px 0px 10px; " >
+    			<div class="row">
+    				<div class="col-lg-12 text-center">
+    					<h2 style="font-family:'站酷快乐体';">团队简介</h2>
+    					<hr class="star-primary">
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="media">
+    					<div class="media-left">
+    						<a href="#">
+    							<img src="img/111.jpg" class="img-responsive" id="bar_show"/>
+    						</a>
+    					</div>
+    					<div class="media-body">
+    						<ul class="nav nav-pills">
+								<li class="active"><a href="#pan1" class="btn-primary">团队介绍</a></li>
+								<li><a href="#pan2">团队优势</a></li>
+								<li><a href="#pan3">团队互助</a></li>
+								<!--<li><a href="#pan4">收益-获得</a></li>-->
+							</ul>
+						<!--面板-->
+							<div class="tab-content">
+								<div class="tab-pane active" id="pan1">
+									我们的团队名称是<strong>BAR</strong>团队，英文全称是<strong>Breaking All Restriction </strong>
+									中文翻译过来就是”打破所有的限制“。这是我们的团队名称，亦是我们团队的中心思想，我们每个人都贯彻”打破所有的
+									限制和权限“这一思想力求找出所有的bug与困难，突破限制，突破自我，做到最好的自己。在做每一个项目或者是任务时，
+									力求做到最好。我们这个团队隶属于安阳师范学院软件学院，这个团队是由软件学院.net方向负责人李东琦老师创建的，
+									团队创建于2016年，主成员有三届--2016级学生--2017级学生和2018级学生。这个团队主要是帮助同学们更好的学习，能够提供
+									给同学们更多的学习资源，让同学们学到在平时课堂上学不到的东西，也可以提高学生的动手操作能力，获得更多的实战经验，能够
+									为以后的学习，工作打下良好的基础。
+									
+								</div>
+								<div class="tab-pane fade in" id="pan2">
+									我们BAR团队有很大的优势，对于我们学生来说，<br />
+									1.在这里我们可以学的更多，学的更好，学的更快。因为我们的团队老师不仅在课堂上传授给
+									我们知识，在课下，在这个团队中，老师也会给我们一些学习的资源，让我们学到更前进的东西。<br />
+									2.并且这个团队的学习氛围十分的好，每个同学都认真努力的
+									学习自己该学的东西，当我们看着其他的在学习的时候，自己也会情不自禁的学习。<br />
+									3.并且学校提供给我们很好的学习环境，有一层专属于我们学校团队的学习基地，可以让我们放心的去学习，不再害怕有人吵闹
+									
+								</div>
+								<div class="tab-pane fade" id="pan3">
+									团队协作是指通过团队完成某项制定的事件时所显现出来的自愿合作和协同努力的精神。团队协作如果运用的好，
+									对管理团队特别的重要，可以培养团队的向心力。团队协作会给予那些诚心、大公无私的奉献者适当的回报。如
+									果团队合作是出于自觉自愿，必将会产生一股强大而且持久的力量。所以在这个团队中，我们不仅是自己学自己的，
+									而且每个人都团结互助，有什么资源都是第一时间分享给每个队员，一起学习。并且在做项目的时候，每个人都团结
+									互助，协同合作，共同分析，共同合作，共同完成老师分配下的任务。
+
+								</div>
+								
+							</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	
+    	<header >
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<!--<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>-->
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family: '站酷快乐体';">成员介绍</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills">
+	    						今天努力的汗水，铸就明天的成功
+	    						<br>
+	    						
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+    	<!--成员介绍-->
+		 <section id="team_show" style="padding-top: 90px;padding-bottom: 40px;">
+    		<div class="container" style="box-shadow: #CCCCCC 0px 0px 10px; " >
+    			<div class="row">
+    				<div class="col-lg-12 text-center">
+    					<h2 style="font-family:'站酷快乐体';">成员介绍</h2>
+    					<hr class="star-primary">
+    				</div>
+    			</div>
+				
+				<div class="row">
+    				<div class="media-left pull-right">
+    					<a href="#">
+    						<img src="img/pic01.jpg" class="img-responsive img-circle" />
+    					</a>
+    				</div>
+    				<div class="media-body" id="teacher">
+    					
+    					<h3 class="media-heading text-justify" id="media-heading">
+    						<h3>职务：队长</h3>
+							<p>李瑞森是2016级.net一班的学生，并且也是2016级BAR团队的队长，主要学习的方向是后台，目前在上海的一家公司实习……</p>
+    					</h3>
+    					
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="media-left pull-left">
+    					<a href="#">
+    						<img src="img/pic01.jpg" class="img-responsive img-circle" />
+    					</a>
+    				</div>
+    				<div class="media-body" id="teacher">
+    					
+    					<h3 class="media-heading text-justify" id="media-heading">
+    						<h3>职务：队长</h3>
+							<p>李瑞森是2016级.net一班的学生，并且也是2016级BAR团队的队长，主要学习的方向是后台，目前在上海的一家公司实习……</p>
+    					</h3>
+    					
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="media-left pull-right">
+    					<a href="#">
+    						<img src="img/pic01.jpg" class="img-responsive img-circle" />
+    					</a>
+    				</div>
+    				<div class="media-body" id="teacher">
+    					
+    					<h3 class="media-heading text-justify" id="media-heading">
+    						<h3>职务：队长</h3>
+							<p>李瑞森是2016级.net一班的学生，并且也是2016级BAR团队的队长，主要学习的方向是后台，目前在上海的一家公司实习……</p>
+    					</h3>
+    					
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="media-left pull-left">
+    					<a href="#">
+    						<img src="img/pic01.jpg" class="img-responsive img-circle" />
+    					</a>
+    				</div>
+    				<div class="media-body" id="teacher">
+    					
+    					<h3 class="media-heading text-justify" id="media-heading">
+    						<h3>职务：队长</h3>
+							<p>李瑞森是2016级.net一班的学生，并且也是2016级BAR团队的队长，主要学习的方向是后台，目前在上海的一家公司实习……</p>
+    					</h3>
+    					
+    				</div>
+    			</div>
+			</div>
+		</section>
+		<header>
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<!--<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>-->
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family: '站酷快乐体';">团队老师</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills">
+	    						今天努力的汗水，铸就明天的成功
+	    						<br>
+	    						
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+		<!--团队老师-->
+		<section id="team_teacher" style="padding-top: 50px;padding-bottom: 80px;">
+    		<div class="container" style="box-shadow: #EBCCD1 0px 0px 10px; ">
+    			<div class="row">
+    				<div class="col-lg-12 text-center">
+    					<h2>团队老师</h2>
+    					<hr class="star-primary">
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="media-left pull-left">
+    					<a href="#">
+    						<img src="img/pic01.jpg" class="img-responsive img-circle" />
+    					</a>
+    				</div>
+    				<div class="media-body" id="teacher">
+    					
+    					<h3 class="media-heading text-justify" id="media-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;教师名字：&nbsp;&nbsp;
+    						<a href="#"><abbr title="软件学院.net负责人">李东琦</abbr></a>
+    						
+    					</h3>
+    					<h3 class="media-heading text-justify" id="media-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;所属学校-院系：&nbsp;&nbsp;
+    						<a href="#">安阳师范学院-软件学院</a>
+    						
+    					</h3>
+    					<h3 class="media-heading text-justify" id="media-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;所教专业：&nbsp;&nbsp;
+    						<a href="#">.NET</a>
+    						
+    					</h3>
+    					<h3 class="media-heading text-justify" id="media-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;主要教学：&nbsp;&nbsp;
+    						<a href="#">JavaScript、前端框架、ASP.NET</a>
+    						
+    					</h3>
+    					<h3 class="media-heading text-justify" id="media-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;联系电话：&nbsp;&nbsp;
+    						<a href="#">18888888888</a>
+    						
+    					</h3>
+    				</div>
+    		</div>
+    		
+    		
+    	</section>
+    	
+    		
+    		
+    		
+    		
+    	<!--联系我们-->
+    
+    	<section style="background:url(img/99.jpg) repeat 0 center;padding:190px;padding-bottom: 80px;" id="tel">
+		    <section style="background-color:rgba(0,0,0,0.5)">
+		       <div class="container text-center" style="color: #FFFFFF;">
+		       	<div class="row">
+		       		<div class="col-lg-12">
+		       			<h1>联系电话</h1>
+		       			<h3>888888888</h3>
+		       			<br />
+		       			<a href="#" class="down_arrow">
+		       				<i class="down_arrowi">
+		       					<span class="glyphicon glyphicon-triangle-bottom"></span>
+		       				</i>
+		       			</a>
+
+		       		</div>
+		       	</div>
+		       </div>
+		       
+		    </section>
+		   
+		</section>
+		<!--联系方式-->
+		<section style="background-color: #f3f5f8;padding-top:100px;padding-bottom: 170px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h3>其他联系方式</h3>
+						<br />
+					    <p>...........&nbsp;<span class="glyphicon glyphicon-menu-down"></span>&nbsp;...........</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" style="">
+						<div class="light-box box-hover text-center">
+							<h2>
+								<i class="glyphicon glyphicon-home"></i>
+								<span class="address">地址</span>
+							</h2>
+							<p class="address_name">安阳师范学院
+							<br />
+							文峰区文明大道265号
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="light-box box-hover text-center">
+							<h2>
+								<i class="glyphicon glyphicon-home"></i>
+								<span class="weixin">微信</span>
+							</h2>
+							<p class="weixin_number">一笑倾城：11111111ccc
+							<br />
+							再笑倾国：ccc22222222
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="light-box box-hover text-center">
+							<h2>
+								<i class="glyphicon glyphicon-home"></i>
+								<span class="QQ">QQ</span>
+							</h2>
+							<p class="QQ_number">BAR8888888
+							<br />
+							BAR Best666
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding-top: 40px;">
+					<div class="col-lg-12 text-center">
+						<ul class="social-buttons">
+							<li>
+								<a href="#" class="social-btn">
+									<i class="glyphicon glyphicon-envelope"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="social-btn">
+									<i class="glyphicon glyphicon-globe"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="social-btn">
+									<i class="glyphicon glyphicon-facetime-video"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		</div>
+		<header style="background-color: #222222;padding-top: 80px;">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<!--<img src="img/111.jpg" class="img-responsive img-circle" id="hearder_img"/>-->
+	    				<div class="intro-text">
+	    					<span class="name" style="font-family: '站酷快乐体';">BAR团队欢迎您</span>
+	    					<hr class="star-light"></hr>
+	    					<span class="skills">
+	    						welcome to join us
+	    						<br>
+	    						Copyright © Echo Central 2017
+	    					</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</header>
+    	
+	</body>
+</html>
